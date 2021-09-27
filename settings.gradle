@@ -1,2 +1,3 @@
+include ':opencvlib'
 include ':app'
 rootProject.name = "OpencvStitch"

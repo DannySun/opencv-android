@@ -15,3 +15,12 @@ Java_com_opencv_stitch_MainActivity_stringFromJNI(
 //    hello += string(cv::CV_VERSION_MAJOR) ;
     return env->NewStringUTF(strBuffer);
 }
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_opencv_opencvlib_OpencvHandle_test(JNIEnv *env, jobject thiz) {
+    char strBuffer[128];
+    sprintf(strBuffer, "Hello from opencvv %s\n", CV_VERSION);
+//    hello += string(cv::CV_VERSION_MAJOR) ;
+    return env->NewStringUTF(strBuffer);
+}
