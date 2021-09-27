@@ -1,5 +1,7 @@
 package com.opencv.opencvlib;
 
+import android.graphics.Bitmap;
+
 public class OpencvHandle {
 
     static {
@@ -22,4 +24,6 @@ public class OpencvHandle {
     private OpencvHandle(){}
 
     public native String test();
+
+    public native void processBitmap(Bitmap bitmap);
 }
